@@ -14,4 +14,9 @@ public class DogServiceImpl implements DogService {
     public void insertDogInfo(DogDo ddo) {
         ddao.insertDogInfo(ddo);
     }
+
+    @Override
+    public void getAllDogInfo() {
+        ddao.getAllDogInfo();
+    }
 }

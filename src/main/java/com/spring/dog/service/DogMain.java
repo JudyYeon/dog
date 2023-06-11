@@ -10,10 +10,8 @@ public class DogMain {
         DogService dogService = (DogService) context.getBean("dogService");
 
         DogDo ddo = (DogDo) context.getBean("dog");
-        DogDo ddo2 = (DogDo) context.getBean("dog2");
-
         dogService.insertDogInfo(ddo);
-        dogService.insertDogInfo(ddo2);
+        dogService.getAllDogInfo();
     }
 
 }

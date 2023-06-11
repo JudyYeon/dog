@@ -7,8 +7,9 @@
     <context:component-scan base-package="com.spring.dog"/>
 
     <bean id="dog" class="com.spring.dog.service.DogDo"
-          p:name="나나" p:kind="포메라니안" p:age="1" p:color="흰색" p:owner="박수아"/>
-    <bean id="dog2" class="com.spring.dog.service.DogDo"
-          p:name="구름이" p:kind="말티즈" p:age="8" p:color="흰색" p:owner="한고은"/>
+          p:name="구름" p:kind="말티" p:age="4" p:color="흰색" p:owner="김민주"/>
+<!--    <bean id="dog2" class="com.spring.dog.service.DogDo"-->
+<!--          p:name="구름이" p:kind="말티즈" p:age="8" p:color="흰색" p:owner="한고은"/>-->
+
 
 </beans>
