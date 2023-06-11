@@ -12,8 +12,6 @@ public class JDBCUtil {
     static String url = "jdbc:mysql://localhost:3306/springdb?characterEncoding=utf-8";
 
     static Connection conn = null;
-    static PreparedStatement pstmt = null;
-    static ResultSet rs = null;
 
     public static Connection getConnection() {
         try {
@@ -21,7 +19,7 @@ public class JDBCUtil {
             Class.forName("com.mysql.cj.jdbc.Driver");
             //디비에 연결
             conn = DriverManager.getConnection(url, id, password);
-            System.out.println("MySQL 디비 연결 완료");
+            System.out.println("MySQL DB connection Success!!");
             return conn;
         }catch(Exception e) {
             e.printStackTrace();

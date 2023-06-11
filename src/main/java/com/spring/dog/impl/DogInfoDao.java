@@ -49,14 +49,14 @@ public class DogInfoDao {
             pstmt = conn.prepareStatement(sql);
             ResultSet result = pstmt.executeQuery();
             System.out.println("데이터 결과는? ");
-            System.out.println("no \t name \t kind   \t age \t color \t owner");
+            System.out.println("no \t name \t kind \t age \t color \t owner");
             System.out.println("==================================================");
             while (result.next()){
                 System.out.println(result.getInt("num")
                         + "\t" + result.getString("name")
                         + "    \t" + result.getString("kind")
                         + "    \t" + result.getInt("age")
-                        + "\t" + result.getString("color")
+                        + "    \t" + result.getString("color")
                         + "    \t" + result.getString("owner"));
             }
         } catch (SQLException e) {
